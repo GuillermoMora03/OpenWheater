@@ -24,11 +24,11 @@ search.addEventListener('click', () => {
             return;
         }        
 
-        const image =  document.querySelector('.weather-box img');
-        const temperature =  document.querySelector('.weather-box .temperature');
-        const description =  document.querySelector('.weather-box .description');
-        const humidity =  document.querySelector('.weather-details .humidity span');
-        const wind =  document.querySelector('.weather-details .wind span');
+        const image = document.querySelector('.weather-box img');
+        const temperature = document.querySelector('.weather-box .temperature');
+        const description = document.querySelector('.weather-box .description');
+        const humidity = document.querySelector('.weather-details .humidity span');
+        const wind = document.querySelector('.weather-details .wind span');
 
         if (cityHide.textContent == city){
             return;
@@ -102,14 +102,14 @@ search.addEventListener('click', () => {
                 infoWind.insertAdjacentElement('afterend', elCloneInfoWind);
             }, 2200);
 
-            const cloneInfoWeather = document.querySelector('.info-weather.active-clone');
+            const cloneInfoWeather = document.querySelectorAll('.info-weather.active-clone');
             const totalCloneInfoWeather = cloneInfoWeather.length;
             const cloneInfoWeatherFirst = cloneInfoWeather[0];
 
-            const cloneInfoHumidity = document.querySelector('.info-humidity.active-clone');
+            const cloneInfoHumidity = document.querySelectorAll('.info-humidity.active-clone');
             const cloneInfoHumidityFirst = cloneInfoHumidity[0];
             
-            const cloneInfoWind = document.querySelector('.info-wind.active-clone');
+            const cloneInfoWind = document.querySelectorAll('.info-wind.active-clone');
             const cloneInfoWindFirst = cloneInfoWind[0];
 
             if (totalCloneInfoWeather > 0) {
